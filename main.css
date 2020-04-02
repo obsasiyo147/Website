@@ -184,7 +184,7 @@ a, a:visited, a:hover, a:active {
   }
 
 
-  @media screen and (max-width: 1999px) and (min-height: 800px) {
+  /* @media screen and (max-width: 1000px) and (min-height: 800px) {
     
     .hero{
         left: 0;
@@ -241,7 +241,7 @@ a, a:visited, a:hover, a:active {
         text-decoration: none;
       }
    
-  }
+  } */
 
   
 /* ----------- Social -------------------- */
