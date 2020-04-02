@@ -1,7 +1,9 @@
 
-body{
+/* body{
         color: #fff;
         background: #111111;
+        margin: 0;
+  padding: 0;
     }
 
 @media only screen and (min-width: 700px) {
@@ -11,10 +13,11 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center ;
+    overflow: hidden !important;
 
 }
 
@@ -63,7 +66,7 @@ a, a:visited, a:hover, a:active {
 
 }
 
-/*------------ Mobile ------------------ */
+------------ Mobile ------------------ 
 
 @media screen and (max-width: 700px) {
     
@@ -72,7 +75,7 @@ a, a:visited, a:hover, a:active {
         top: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center ;
@@ -131,7 +134,7 @@ a, a:visited, a:hover, a:active {
         top: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.473)), url("Dark1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center ;
@@ -181,7 +184,7 @@ a, a:visited, a:hover, a:active {
         text-decoration: none;
       }
    
-  }
+  } */
 
 
   /* @media screen and (max-width: 1000px) and (min-height: 800px) {
@@ -251,6 +254,10 @@ a, a:visited, a:hover, a:active {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+
   }
   
 .icon-bar a {
@@ -283,3 +290,115 @@ color: transparent;
 .youtube {
 color: transparent;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background: url("Dark1.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title > h1 {
+  color: #fff;
+  font-size: 5vw;
+  font-family: "futura-pt";
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.fog {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+}
+
+.fog-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 2;
+}
+
+.fog-img-first {
+  background: url("fog-1.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+}
+
+.fog-img-second {
+  background: url("fog-2.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+
+.button {
+    background-color: transparent;
+    font-size: 2vw;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 15px 15px 15px;
+    transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+    margin-bottom: 1em;  
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
