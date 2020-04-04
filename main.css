@@ -88,8 +88,6 @@ body {
     transform: translate3d(-200vw, 0, 0);
   }
 }
-
-
 .button {
     background-color: transparent;
     font-size: 2vw;
@@ -136,7 +134,6 @@ font-size: 20px;
 background-color: white;
 color: black;
 }
-
 
 .instagram {
   color: transparent;
