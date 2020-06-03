@@ -1,10 +1,186 @@
-html,
+
+
+/* basic template */
+html, body{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background: url("Dark1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-color: #212121;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  text-align: center;
+}
+ 
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+ /* border: 1px solid red; */
+}
+
+ /* For mobile phones: */
+ [class*="col-"] {
+  width: 100%;
+ }
+
+@media only screen and (min-width: 768px) {
+  /* for desktop and Tablet*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url("Dark1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-color: #212121;
+}
+.space{
+  padding-top: 0 !important;
+}
+}
+
+ul {
+  padding-left: 0;
+  padding-top: 10pt;
+  padding-bottom: 0pt;
+  list-style-type: none;
+ /* border: 1px solid red; */
+}
+
+li {
+  list-style: none;
+  /*border: 1px solid red;*/
+  margin: 10pt;
+}
+
+a ,a:hover, a:visited{
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color:inherit;
+}
+
+/* classes */
+
+.main{
+    color: #fff;
+    font-size: 15px;
+    font-family: "futura-pt";
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.title{
+  color: #fff;
+  font-size: 25px;
+  font-family: "futura-pt";
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.middle{
+  margin-top: 10%;
+}
+
+.space{
+  padding-top: 100px;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  transition: all 0.3s ease;
+  color: #fff;
+  }
+  
+  .icon-bar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "futura-pt";
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 1px;  
+   }
+  
+  .icon-bar a:hover {
+  background-color: white;
+  color: black;
+  }
+  
+  .button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 15px 15px 15px;
+    transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+    margin-bottom: 1em;  
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html,
 body {
   overflow: hidden;
   margin: 0;
   padding: 0;
   min-width: 75%;
-}
+} 
 
 .absolute-bg {
   position: absolute;
@@ -109,8 +285,9 @@ a, a:visited, a:hover, a:active {
     color: inherit;
     text-decoration: none;
   }
+*/
 
-/* ----------- Social -------------------- */
+/* ----------- Social --------------------
 .icon-bar {
   position: absolute;
   top: 50%;
@@ -214,3 +391,4 @@ color: transparent;
   font-size: 2vw;
 
  }
+ */
