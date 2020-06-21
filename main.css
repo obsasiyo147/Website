@@ -128,7 +128,7 @@ a ,a:hover, a:visited{
   width: 100%;
 }
 
-
+ /* Tablet*/
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -144,7 +144,7 @@ a ,a:hover, a:visited{
     }
 }
 
-/* for desktop and Tablet*/
+/* for desktop */
 @media only screen and (min-width: 1024px) {
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
