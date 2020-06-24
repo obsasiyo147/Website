@@ -125,7 +125,6 @@ a ,a:hover, a:visited{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
  /* Tablet*/
@@ -140,7 +139,7 @@ a ,a:hover, a:visited{
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 40%;
+      width: 50%;
     }
 }
 
@@ -174,7 +173,7 @@ html, body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 50%;
 }
 
 .text{
