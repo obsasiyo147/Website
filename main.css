@@ -141,7 +141,7 @@ a ,a:hover, a:visited{
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 30%;
       height: 40%;
     }
 }
@@ -163,7 +163,7 @@ a ,a:hover, a:visited{
 
 html, body{
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   /* background: url("Dark3.jpg"); */
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ html, body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
   height: 40%;
 
 }
@@ -186,6 +186,7 @@ html, body{
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+
 }
 
 ul {
